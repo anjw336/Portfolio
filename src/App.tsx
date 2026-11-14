@@ -707,7 +707,7 @@ function About() {
           <p>팀원들과 각자 만든 기능을 연결하면서 서로 다른 코드의 의도와 구현 방식을 이해하고 조율했습니다. 필요한 질문을 하고 제 생각을 명확히 설명하며, 함께 더 나은 해결책을 찾아가는 협업의 가치를 배웠습니다.</p>
         </article>
       </div>
-      <p className="about-story-ending">앞으로도 호기심을 작은 결과물로 만들고, <strong>구현한 기능을 스스로 설명하며 꾸준히 개선하는 개발자</strong>로 성장하겠습니다. ♡</p>
+      <p className="about-story-ending">앞으로도 호기심을 작은 결과물로 만들고, <strong>구현한 기능을 스스로 설명하며 꾸준히 개선하는 개발자</strong>로 성장하겠습니다. ♥</p>
       <div className="about-skills">
         <h3>TOOLS I WORK WITH</h3>
         {[
