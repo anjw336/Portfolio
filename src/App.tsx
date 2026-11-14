@@ -123,7 +123,7 @@ function Home() {
         <BrowserIllustration />
       </section>
       <section className="cozy-path-section" aria-labelledby="cozy-explore-title">
-        <div className="cozy-section-head"><div><span className="cozy-section-kicker">LET'S EXPLORE</span><h2 id="cozy-explore-title">여기서부터 둘러볼까요?<span aria-hidden="true"> ♡</span></h2></div><span className="cozy-section-description">각 카드에서 자세한 내용을 확인할 수 있습니다</span></div>
+        <div className="cozy-section-head"><div><span className="cozy-section-kicker">LET'S EXPLORE</span></div><span className="cozy-section-description">각 카드에서 자세한 내용을 확인할 수 있습니다</span></div>
         <div className="cozy-path-grid">
           <InternalLink to="/projects" className="cozy-path-card path-projects">
             <span className="path-index">01 / MADE BY ME</span>
