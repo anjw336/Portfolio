@@ -875,3 +875,44 @@ a:focus-visible, button:focus-visible, summary:focus-visible {outline:3px solid 
 .bear-laptop-base {z-index:11;left:20%;top:86%;width:64%;height:7%;border:2px solid #bcaea9;border-radius:8px 8px 12px 12px;background:#e4d7d0;transform:perspective(60px) rotateX(15deg);}
 /* Keep the existing card's responsive scaling. The bear itself follows the card dimensions. */
 @media (max-width:760px) { .bear-diary-card {overflow:hidden} }
+
+
+/* Refined home illustration: clean bear silhouette and safe note placement. */
+.bear-sketch {
+  position: relative;
+  display: block;
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 215px;
+  isolation: isolate;
+  overflow: visible;
+}
+.bear-sketch > div { display: none !important; }
+.bear-sketch::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20420%20300%22%20role%3D%22img%22%20aria-label%3D%22%EA%B3%B0%EB%8F%8C%EC%9D%B4%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80%20%EB%85%B8%ED%8A%B8%EB%B6%81%20%EC%95%9E%EC%97%90%20%EC%95%89%EC%95%84%20%EC%9E%88%EB%8A%94%20%EA%B7%B8%EB%A6%BC%22%3E%0A%3Cellipse%20cx%3D%22210%22%20cy%3D%22270%22%20rx%3D%22129%22%20ry%3D%2216%22%20fill%3D%22%23cfd6c4%22%20opacity%3D%22.55%22%2F%3E%0A%3Ccircle%20cx%3D%22210%22%20cy%3D%22148%22%20r%3D%22124%22%20fill%3D%22%23e8f0e9%22%20opacity%3D%22.72%22%2F%3E%0A%3Cpath%20d%3D%22M133%20218c0-42%2034-72%2077-72s77%2030%2077%2072v39H133z%22%20fill%3D%22%23f8f1e7%22%20stroke%3D%22%2387958a%22%20stroke-width%3D%225%22%2F%3E%0A%3Ccircle%20cx%3D%22153%22%20cy%3D%2293%22%20r%3D%2237%22%20fill%3D%22%23fff8ef%22%20stroke%3D%22%2387958a%22%20stroke-width%3D%225%22%2F%3E%0A%3Ccircle%20cx%3D%22267%22%20cy%3D%2293%22%20r%3D%2237%22%20fill%3D%22%23fff8ef%22%20stroke%3D%22%2387958a%22%20stroke-width%3D%225%22%2F%3E%0A%3Ccircle%20cx%3D%22153%22%20cy%3D%2294%22%20r%3D%2221%22%20fill%3D%22%23f1d7d5%22%2F%3E%0A%3Ccircle%20cx%3D%22267%22%20cy%3D%2294%22%20r%3D%2221%22%20fill%3D%22%23f1d7d5%22%2F%3E%0A%3Cellipse%20cx%3D%22210%22%20cy%3D%22145%22%20rx%3D%2288%22%20ry%3D%2276%22%20fill%3D%22%23fff8ef%22%20stroke%3D%22%2387958a%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22178%22%20cy%3D%22146%22%20rx%3D%225.5%22%20ry%3D%228%22%20fill%3D%22%2352645a%22%2F%3E%0A%3Cellipse%20cx%3D%22242%22%20cy%3D%22146%22%20rx%3D%225.5%22%20ry%3D%228%22%20fill%3D%22%2352645a%22%2F%3E%0A%3Cellipse%20cx%3D%22159%22%20cy%3D%22166%22%20rx%3D%2214%22%20ry%3D%228%22%20fill%3D%22%23efc7c4%22%2F%3E%0A%3Cellipse%20cx%3D%22261%22%20cy%3D%22166%22%20rx%3D%2214%22%20ry%3D%228%22%20fill%3D%22%23efc7c4%22%2F%3E%0A%3Cellipse%20cx%3D%22210%22%20cy%3D%22166%22%20rx%3D%2218%22%20ry%3D%2212%22%20fill%3D%22%23f2e9df%22%2F%3E%0A%3Cpath%20d%3D%22M206%20164q4%204%208%200M210%20170q-6%207-12%201M210%20170q6%207%2012%201%22%20fill%3D%22none%22%20stroke%3D%22%2368756c%22%20stroke-width%3D%222.7%22%20stroke-linecap%3D%22round%22%2F%3E%0A%3Cellipse%20cx%3D%22162%22%20cy%3D%22211%22%20rx%3D%2219%22%20ry%3D%2215%22%20fill%3D%22%23fff8ef%22%20stroke%3D%22%2387958a%22%20stroke-width%3D%224%22%2F%3E%0A%3Cellipse%20cx%3D%22258%22%20cy%3D%22211%22%20rx%3D%2219%22%20ry%3D%2215%22%20fill%3D%22%23fff8ef%22%20stroke%3D%22%2387958a%22%20stroke-width%3D%224%22%2F%3E%0A%3Crect%20x%3D%22105%22%20y%3D%22204%22%20width%3D%22210%22%20height%3D%2266%22%20rx%3D%2215%22%20fill%3D%22%2371877a%22%20stroke%3D%22%2352665a%22%20stroke-width%3D%225%22%2F%3E%0A%3Cpath%20d%3D%22M128%20225l13%2010-13%2010%22%20fill%3D%22none%22%20stroke%3D%22%23f7f7ef%22%20stroke-width%3D%223.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3Crect%20x%3D%22157%22%20y%3D%22240%22%20width%3D%2250%22%20height%3D%225%22%20rx%3D%222.5%22%20fill%3D%22%23f7f7ef%22%2F%3E%0A%3Cpath%20d%3D%22M89%20270h242l-15%2013H104z%22%20fill%3D%22%23e7ddd4%22%20stroke%3D%22%23b8ada3%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3Cpath%20d%3D%22M186%20283h48%22%20stroke%3D%22%23c7bbb1%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%0A%3Cpath%20d%3D%22M91%20105l5-9%205%209-5%209zM324%20147l4-7%204%207-4%207z%22%20fill%3D%22%23d9aab4%22%2F%3E%0A%3C%2Fsvg%3E") center / contain no-repeat;
+}
+.cozy-journal {
+  top: 46%;
+  transform: translate(-50%, -50%) rotate(3deg);
+}
+.cozy-message {
+  right: 12px;
+  bottom: 14px;
+  max-width: 190px;
+  transform: rotate(-3deg);
+}
+@media (max-width: 1100px) {
+  .cozy-journal { transform: translate(-50%, -50%) rotate(3deg) scale(.9); }
+  .cozy-message { right: 12px; bottom: 16px; }
+}
+@media (max-width: 800px) {
+  .cozy-journal { transform: translate(-50%, -50%) rotate(3deg) scale(.84); }
+  .cozy-message { right: 14px; bottom: 8px; transform: rotate(-3deg) scale(.84); }
+}
+@media (max-width: 600px) {
+  .cozy-journal { top: 45%; transform: translate(-50%, -50%) rotate(3deg) scale(.74); }
+  .cozy-message { right: 10px; bottom: 2px; transform: rotate(-3deg) scale(.76); transform-origin: right bottom; }
+}
