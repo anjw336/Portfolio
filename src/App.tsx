@@ -694,20 +694,20 @@ function About() {
         <article className="about-story-item">
           <span className="about-story-number">01 / THE FUN PART</span>
           <h3>내가 만든 것이 움직이는 순간</h3>
-          <p>MEMO:RE에서는 사진과 스티커로 티켓을 꾸미고, Kotlin 게임에서는 방향키와 작은 이벤트로 플레이 흐름을 구현했습니다. 아이디어가 화면에서 실제로 작동할 때 가장 큰 재미를 느낍니다.</p>
+          <p>모바일 앱과 게임 등 서로 다른 프로젝트에서 아이디어를 실제 기능으로 구현했습니다. 화면과 조작 방식이 의도한 대로 연결되어 사용자가 직접 경험할 수 있을 때 가장 큰 보람을 느낍니다.</p>
         </article>
         <article className="about-story-item">
           <span className="about-story-number">02 / LITTLE DISCOVERIES</span>
           <h3>예상대로 되지 않아도, 그게 배움이 되니까</h3>
-          <p>이미지가 다른 기기에서 열리지 않거나 저장 과정에서 예외가 발생하면, 화면만 수정하기보다 원인을 파악하려고 노력했습니다. 문제를 재현하고 확인하는 습관도 길렀습니다.</p>
+          <p>예상과 다른 결과를 만나면 화면을 바로 수정하기보다 먼저 문제를 재현하고 원인을 좁혀갑니다. 기기별 동작 차이와 저장·입력 과정의 예외를 확인하며, 해결에 그치지 않고 다시 발생하지 않도록 개선하는 습관을 길렀습니다.</p>
         </article>
         <article className="about-story-item">
           <span className="about-story-number">03 / TOGETHER IS BETTER</span>
           <h3>혼자보다 함께 만들 때 배우는 것</h3>
-          <p>팀원들이 각자 만든 화면을 하나로 합치며 서로 다른 코드의 의도를 이해하고 조율하는 경험도 했습니다. 모르는 것을 질문하고, 내 생각을 설명하고, 함께 더 나은 방법을 찾아가는 시간이 좋습니다.</p>
+          <p>팀원들과 각자 만든 기능을 연결하면서 서로 다른 코드의 의도와 구현 방식을 이해하고 조율했습니다. 필요한 질문을 하고 제 생각을 명확히 설명하며, 함께 더 나은 해결책을 찾아가는 협업의 가치를 배웠습니다.</p>
         </article>
       </div>
-      <p className="about-story-ending">앞으로도 호기심을 그냥 넘기지 않고 작은 결과물로 만들어 보면서, <strong>내가 만든 기능을 스스로 설명하고 계속 개선할 수 있는 개발자</strong>로 성장하고 싶습니다. 🌷</p>
+      <p className="about-story-ending">앞으로도 호기심을 작은 결과물로 만들고, <strong>구현한 기능을 스스로 설명하며 꾸준히 개선하는 개발자</strong>로 성장하겠습니다. ♡</p>
       <div className="about-skills">
         <h3>TOOLS I WORK WITH</h3>
         {[
