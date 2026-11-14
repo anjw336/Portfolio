@@ -916,3 +916,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible {outline:3px solid 
   .cozy-journal { top: 45%; transform: translate(-50%, -50%) rotate(3deg) scale(.74); }
   .cozy-message { right: 10px; bottom: 2px; transform: rotate(-3deg) scale(.76); transform-origin: right bottom; }
 }
+
+
+/* Center bear within the notebook card. */
+.bear-sketch::before { transform: translateX(8%); }
+@media (max-width: 600px) {
+  .bear-sketch::before { transform: translateX(7%); }
+}
