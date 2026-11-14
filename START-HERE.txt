@@ -1,0 +1,20 @@
+[안지원 웹 포트폴리오 시작하기]
+
+1. ZIP 압축을 풉니다.
+2. VS Code에서 "파일 → 폴더 열기"로 "jiwon-portfolio-pages" 폴더를 엽니다.
+3. VS Code 터미널에서 dir(Windows) 또는 ls(Mac)를 입력해서 package.json이 보이는지 확인합니다.
+4. 아래 명령어를 순서대로 실행하세요.
+
+   npm install
+   npm run dev
+
+5. 터미널에 뜨는 http://localhost:5173 주소를 브라우저에서 엽니다.
+
+[버튼으로 이동하는 구조]
+Home → Projects → MEMO:RE 또는 Kotlin 게임 상세
+Home → Activities → AI 실패 아이디어 또는 AI 협업 규칙 상세
+Home → About → 이력서 / GitHub / 이메일
+
+※ 바로 모양을 보고 싶다면 preview.html을 브라우저로 열어보세요.
+  preview.html은 React 없이 움직이는 독립 미리보기이며, 실제 작업은 React 코드(src 폴더)를 수정하세요.
+  배포 전에는 npm run build를 꼭 실행해 주세요.
