@@ -66,46 +66,50 @@ function Header({ route }: { route: string }) {
 
 function BrowserIllustration() {
   return (
-    <div className="cozy-visual" role="img" aria-label="작은 노트북을 사용하는 크림색 곰 캐릭터와 분홍빛 개발 일기가 담긴 일러스트">
+    <div className="cozy-visual" role="img" aria-label="노트북 앞에서 왼손으로 인사하고 오른손으로 분홍 꽃을 든 크림색 곰돌이 개발 일기. CSS로 그린 일러스트입니다.">
       <div className="cozy-aura" aria-hidden="true" />
       <div className="cozy-orbit" aria-hidden="true" />
-      <span className="cozy-glimmer glimmer-a" aria-hidden="true">✳</span>
-      <span className="cozy-glimmer glimmer-b" aria-hidden="true">✦</span>
-      <span className="cozy-glimmer glimmer-c" aria-hidden="true">♡</span>
-      <div className="cozy-journal" aria-hidden="true">
-        <span className="journal-topline">A LITTLE DEV DIARY <span>✿</span></span>
-        <div className="journal-sketch">
-          <svg viewBox="0 0 290 214" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-            <defs>
-              <linearGradient id="plushBody" x1="0" y1="0" x2="0.9" y2="1"><stop offset="0" stopColor="#fffaf0"/><stop offset="1" stopColor="#e9e5d9"/></linearGradient>
-              <linearGradient id="deskScreen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#829489"/><stop offset="1" stopColor="#566f63"/></linearGradient>
-            </defs>
-            <ellipse cx="144" cy="186" rx="118" ry="19" fill="#c4b7ad" opacity=".23"/>
-            <path d="M39 149Q26 122 45 113Q57 106 70 124Q71 92 87 78Q110 58 146 59Q175 60 196 81Q215 105 211 140L202 168Q144 198 84 165Z" fill="url(#plushBody)" stroke="#c5bdb2" strokeWidth="3"/>
-            <circle cx="90" cy="65" r="26" fill="#fff9ef" stroke="#c5bdb2" strokeWidth="3"/>
-            <circle cx="187" cy="65" r="26" fill="#fff9ef" stroke="#c5bdb2" strokeWidth="3"/>
-            <circle cx="90" cy="67" r="12" fill="#e6c0bd"/><circle cx="187" cy="67" r="12" fill="#e6c0bd"/>
-            <ellipse cx="139" cy="105" rx="84" ry="73" fill="url(#plushBody)" stroke="#c5bdb2" strokeWidth="3"/>
-            <circle cx="110" cy="104" r="4.9" fill="#5b665d"/><circle cx="169" cy="104" r="4.9" fill="#5b665d"/>
-            <ellipse cx="139" cy="118" rx="15" ry="12" fill="#f0e4d8"/>
-            <path d="M133 116Q139 122 145 116" stroke="#6c716b" strokeWidth="3" strokeLinecap="round" fill="none"/>
-            <ellipse cx="98" cy="123" rx="13" ry="8" fill="#edc2c2" opacity=".8"/>
-            <ellipse cx="181" cy="123" rx="13" ry="8" fill="#edc2c2" opacity=".8"/>
-            <rect x="77" y="137" width="128" height="60" rx="12" fill="url(#deskScreen)" stroke="#4e655b" strokeWidth="2"/>
-            <path d="M91 146L103 158L91 169" fill="none" stroke="#e7eee7" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M111 170H152" stroke="#e7eee7" strokeWidth="4" strokeLinecap="round"/>
-            <path d="M72 196H210L222 203Q226 208 218 210H64Q58 207 64 203Z" fill="#e6d9d2" stroke="#bbaaa3" strokeWidth="2"/>
-            <path d="M217 120Q241 86 258 108Q268 120 255 133" fill="none" stroke="#7a9482" strokeWidth="5" strokeLinecap="round"/>
-            <path d="M244 113Q227 98 235 87Q255 85 251 106" fill="#b0c7b8" stroke="#7a9482" strokeWidth="2"/>
-            <path d="M259 130Q274 115 280 125Q282 138 262 140" fill="#bfd1be" stroke="#7a9482" strokeWidth="2"/>
-            <circle cx="242" cy="82" r="12" fill="#e5aeb0"/><circle cx="242" cy="82" r="5" fill="#fff1e9"/>
-            <circle cx="22" cy="67" r="8" fill="#f2cec8"/><path d="M22 49V39M22 85V94M4 67H-2M40 67H49" stroke="#f0c5be" strokeWidth="4" strokeLinecap="round"/>
-          </svg>
+      <div className="cozy-journal bear-diary-card" aria-hidden="true">
+        <div className="journal-topline">A LITTLE DEV DIARY <span>✿</span></div>
+        <div className="journal-sketch bear-sketch">
+          <div className="bear-sun"><i /><i /><i /><i /></div>
+          <div className="bear-floor-shadow" />
+          <div className="bear-ear bear-ear-left" />
+          <div className="bear-ear bear-ear-right" />
+          <div className="bear-body" />
+          <div className="bear-foot bear-foot-left"><i /><b /><b /><b /></div>
+          <div className="bear-foot bear-foot-right"><i /><b /><b /><b /></div>
+          <div className="bear-arm bear-wave"><i /><b /><b /><b /></div>
+          <div className="bear-arm bear-flower-arm" />
+          <div className="bear-head">
+            <span className="bear-eye bear-eye-left" />
+            <span className="bear-eye bear-eye-right" />
+            <span className="bear-blush bear-blush-left" />
+            <span className="bear-blush bear-blush-right" />
+            <span className="bear-muzzle"><i /></span>
+          </div>
+          <div className="bear-flower">
+            <span className="bear-flower-stem" />
+            <span className="bear-flower-leaf bear-flower-leaf-left" />
+            <span className="bear-flower-leaf bear-flower-leaf-right" />
+            <span className="bear-flower-petal" />
+          </div>
+          <div className="bear-flower-paw" />
+          <div className="bear-laptop">
+            <span className="bear-terminal-chevron">&gt;</span>
+            <span className="bear-terminal-line" />
+          </div>
+          <div className="bear-laptop-base" />
         </div>
         <div className="journal-bottom"><span>♡ made with care</span><span>2026 — ongoing</span></div>
       </div>
-      <div className="cozy-message" aria-hidden="true"><span className="message-doodle">✎</span><span>조금씩, 꾸준히<br/><b>만들어가는 중!</b></span><span className="message-heart">♥</span></div>
-      <div className="cozy-swatch swatch-pink" aria-hidden="true"/><div className="cozy-swatch swatch-sage" aria-hidden="true"/>
+      <div className="cozy-message" aria-hidden="true">
+        <span className="message-doodle">✎</span>
+        <span>조금씩, 꾸준히<br/><b>만들어가는 중!</b></span>
+        <span className="message-heart">♥</span>
+      </div>
+      <div className="cozy-swatch swatch-pink" aria-hidden="true" />
+      <div className="cozy-swatch swatch-sage" aria-hidden="true" />
     </div>
   );
 }
@@ -380,8 +384,18 @@ function MemoDetail() {
     </section>
 
 
-    <section className="memo-section" aria-labelledby="memo-wbs-title">
-      <div className="memo-section-heading"><div><span className="memo-eyebrow">MY WORK · WBS & PR</span><h2 id="memo-wbs-title">작업내용</h2></div><p>WBS의 담당 내역과 실제 팀 코드·병합된 PR 기록을 함께 정리했습니다.</p></div>
+    <section className="memo-section memo-work-section" aria-labelledby="memo-wbs-title">
+      <div className="memo-section-heading">
+        <div><span className="memo-eyebrow">A LITTLE MORE · WORK LOG</span><h2 id="memo-wbs-title">조금 더 자세한 작업 기록</h2></div>
+        <p>핵심 경험을 읽은 뒤, 궁금할 때 펼쳐보세요.</p>
+      </div>
+      <details className="memo-work-details">
+        <summary className="memo-work-toggle">
+          <span className="memo-work-toggle-mark" aria-hidden="true">☰</span>
+          <span className="memo-work-toggle-copy"><strong>팀 프로젝트에서 맡았던 일 자세히 보기</strong><small>기획부터 화면 구현과 코드 통합까지 · 9가지 기록</small></span>
+          <span className="memo-work-chevron" aria-hidden="true">⌄</span>
+        </summary>
+        <div className="memo-work-expanded">
       <div className="memo-scope-grid">
         <article><span>01 / 팀 공동 기획 · 공통 컴포넌트</span><h3>기능을 함께 정의하고, 화면의 바탕 만들기</h3><p>기획서·구현 기능 설계에는 팀원 전원으로 참여했고, 공통 컴포넌트 제작은 프론트 팀원과 함께 담당했습니다.</p></article>
         <article><span>02 / 초기 시연</span><h3>티켓 생성과 상세 화면</h3><p>저희 앱의 주요 기능인 티켓 만들기·상세 화면을 담당했습니다.</p><External href={`${teamRepo}/blob/develop/frontend/src/components/TicketEditor.tsx`}>티켓 화면 코드</External></article>
@@ -391,13 +405,15 @@ function MemoDetail() {
         <article><span>06 / 개인 티켓</span><h3>사진과 메모로 한 장 완성하기</h3><p>사진 1~4장과 메모를 넣는 개인 티켓 생성 화면, 스티커·텍스트 배치와 저장 후 복원까지 꾸미기 화면이 담당 범위였습니다.</p><External href={`${teamRepo}/blob/develop/frontend/src/components/TicketEditor.tsx`}>편집 화면 코드</External></article>
         <article><span>07 / 공동 개발</span><h3>API 연동과 반응형 UI</h3><p>API 연결과 화면 크기에 따른 UI 조정은 프론트 팀원과 함께 담당한 항목입니다. 프론트 화면을 팀의 데이터 흐름과 연결하는 일이었습니다.</p><External href={`${teamRepo}/tree/develop/frontend/src`}>프론트엔드 소스</External></article>
         <article><span>08 / AI 기능 연계 · WBS 담당 항목</span><h3>AI 초안 3개 선택과 프레임 렌더링</h3><p>AI 초안 3개 중 선택하는 화면과 합성·프레임 템플릿 렌더링을 담당했습니다. 아직 현재 진행 중인 항목입니다.</p></article>
-        <article><span>09 / FRONTEND INTEGRATION · MERGED PR</span><h3>조원 코드 통합부터 PR·병합까지</h3><p>프론트엔드 조원이 작업한 화면을 현재 Expo Router 구조와 최신 develop 코드에 맞게 합쳤습니다. 기존 API 연결과 shared 입력 규칙이 유지되도록 충돌·변경 범위를 점검하고, 통합 내용을 PR로 제출해 format·lint·typecheck 검사 결과를 남겼습니다. 제출한 PR들은 develop에 병합되었습니다.</p><External href={`${teamRepo}/pull/68`}>전체 화면 통합 PR #68</External> <External href={`${teamRepo}/pull/84`}>그룹 화면 통합 PR #84</External> <External href={`${teamRepo}/pull/91`}>홈·티켓 통합 PR #91</External></article>
+        <article><span>09 / FRONTEND INTEGRATION · TEAMWORK</span><h3>팀원이 만든 화면을 하나로 연결하기</h3><p>프론트엔드 조원이 작업한 화면을 현재 Expo Router 구조와 최신 develop 코드에 맞게 합쳤습니다. 기존 API 연결과 shared 입력 규칙이 유지되도록 충돌·변경 범위를 점검하고, 통합 뒤 format·lint·typecheck로 변경 사항을 확인했습니다.</p><External href={`${teamRepo}/tree/develop/frontend/src`}>프론트엔드 소스 코드</External></article>
       </div>
-      <p className="memo-credit-note">WBS의 ‘담당’은 모든 기능의 구현 완료를 의미하지 않습니다. 특히 AI 초안 연계는 완료를 단정하지 않았고, 스토어·환경설정·문의사항은 11월 4일 개편안에서 후순위로 분류되어 완료 성과로 적지 않았습니다. 09번 통합·PR 경험은 WBS가 아닌 실제 병합된 GitHub PR을 근거로 했고, 백엔드 API·인프라 구현은 다른 팀원의 역할과 구분했습니다.</p>
+      <p className="memo-credit-note">팀 프로젝트이므로 기획·구현·통합에 참여한 범위를 구분해 적었습니다. 일부 항목은 당시 WBS의 담당 계획이며, 진행 중인 기능을 완료한 것처럼 표시하지 않았습니다.</p>
+        </div>
+      </details>
     </section>
 
     <section className="memo-section" aria-labelledby="memo-code-title">
-      <div className="memo-section-heading"><div><span className="memo-eyebrow">CODE & PROBLEM SOLVING</span><h2 id="memo-code-title">코드로 더 자세히 설명하는 네 가지 사례</h2></div><p>위에는 WBS 기준의 전체 담당 범위를, 아래에는 실제 코드로 설명할 수 있는 사례를 담았습니다.</p></div>
+      <div className="memo-section-heading"><div><span className="memo-eyebrow">CODE & PROBLEM SOLVING</span><h2 id="memo-code-title">코드로 더 자세히 설명하는 네 가지 사례</h2></div><p>이 프로젝트에서 특히 고민했던 부분을 실제 코드와 함께 정리했어요.</p></div>
       <div className="memo-code-accordion">
         {memoCodeSamples.map((item) =>
           <article key={item.id} className="memo-experience">
@@ -670,11 +686,28 @@ function About() {
     <div className="about-grid"><section className="about-personal"><div className="about-symbol" aria-label="중단발 웨이브 머리와 더스티 핑크 스웨터를 입고 노트북을 든 여성 개발자 일러스트" role="img">
       <div className="about-profile-art" aria-hidden="true" />
     </div><span className="about-hello">HELLO AGAIN, I'M JIWON</span><h2>안지원 <small>AN JI WON</small></h2><p>한국항공대학교 소프트웨어공학과<br/>2026.03 편입학 · 3학년 재학 중</p><div className="about-buttons"><a className="button primary-button" href={github} target="_blank" rel="noreferrer">GitHub <Arrow /></a><a className="button secondary-button" href={gmailComposeUrl} target="_blank" rel="noopener noreferrer">Email <Arrow /></a></div></section>
-    <div className="about-content"><span className="section-label compact">MY MINDSET</span><h2>만들고, 부딪히고, 꾸준히 배워나가는 개발자</h2>
-      <p><strong>직접 만들고, 끝까지 확인합니다.</strong> 새로운 기능을 구현할 때는 화면이 보이는 것에서 멈추지 않고 예외 상황에서도 제대로 동작하는지 살펴보려고 합니다. MEMO:RE에서는 개발 환경 구성과 티켓 저장·발권 흐름을 다루며, 중복 발권과 데이터 검증, 사진 형식 변환처럼 실제 사용 과정에서 생길 수 있는 문제를 점검했습니다.</p>
-      <p><strong>함께 만든 코드를 하나로 연결합니다.</strong> 프론트엔드 팀원들이 작업한 화면과 기능을 최신 프로젝트 구조에 맞게 통합하고, 기존 API 연결과 저장 흐름이 유지되도록 변경 사항과 충돌을 확인했습니다. 포맷·린트·타입 검사를 거쳐 PR을 작성하고 <code>develop</code> 브랜치에 병합하는 과정까지 경험했습니다. <External href={`${teamRepo}/pull/91`}>화면 통합 PR 확인</External></p>
-      <p><strong>AI도 직접 검증하며 활용합니다.</strong> 팀원들과 AGENTS.md의 작업 규칙을 함께 검토하고 개선 의견을 제안했습니다. AI가 작성한 코드도 작업 범위와 공통 규칙, 검증 기준을 따르는지 확인하면서 편리한 도구일수록 결과를 스스로 책임지고 점검해야 한다는 점을 배웠습니다. <External href={`${teamRepo}/blob/develop/AGENTS.md`}>AGENTS.md 확인</External></p>
-      <p><strong>배움을 실제 결과물로 이어가고 싶습니다.</strong> Kotlin 게임과 React Native 앱, AI 아이디어 공모전처럼 서로 다른 경험에 도전하며 배운 것을 조금씩 넓혀 왔습니다. 앞으로도 새로운 기술을 직접 적용하고, 기록하고, 검증하며 팀과 함께 성장하는 개발자가 되고 싶습니다.</p>
+    <div className="about-content">
+      <span className="section-label compact">A NOTE FROM JIWON</span>
+      <h2>만드는 재미를 좋아하고,<br/>고쳐가는 과정에서 더 많이 배워요.</h2>
+      <p className="about-story-lead">안녕하세요! 저는 떠오른 아이디어를 직접 화면으로 옮겨보는 일을 좋아합니다. 완벽한 결과를 한 번에 만들기보다는, 작은 기능부터 만들어 보고 예상과 다르게 동작하면 이유를 찾아가며 조금씩 완성해 나가고 있어요.</p>
+      <div className="about-story-list">
+        <article className="about-story-item">
+          <span className="about-story-number">01 / THE FUN PART</span>
+          <h3>내가 만든 것이 움직이는 순간</h3>
+          <p>MEMO:RE에서는 사진과 스티커로 한 장의 티켓을 꾸미고, Kotlin 게임에서는 방향키와 작은 이벤트로 플레이 흐름을 만들었습니다. 머릿속에 있던 아이디어가 화면에서 실제로 움직일 때 가장 큰 재미를 느껴요.</p>
+        </article>
+        <article className="about-story-item">
+          <span className="about-story-number">02 / LITTLE DISCOVERIES</span>
+          <h3>예상대로 되지 않아도, 그게 배움이 되니까</h3>
+          <p>이미지가 다른 기기에서 열리지 않거나 저장 과정에서 예외 상황이 생겼을 때, 당장 화면만 고치는 것보다 왜 그런 일이 일어났는지 이해하려고 했습니다. 그 과정에서 문제를 재현하고 확인하는 습관이 조금씩 생겼어요.</p>
+        </article>
+        <article className="about-story-item">
+          <span className="about-story-number">03 / TOGETHER IS BETTER</span>
+          <h3>혼자보다 함께 만들 때 배우는 것</h3>
+          <p>팀원들이 각자 만든 화면을 하나로 합치며 서로 다른 코드의 의도를 이해하고 조율하는 경험도 했습니다. 모르는 것을 질문하고, 내 생각을 설명하고, 함께 더 나은 방법을 찾아가는 시간이 좋습니다.</p>
+        </article>
+      </div>
+      <p className="about-story-ending">앞으로도 호기심을 그냥 넘기지 않고 작은 결과물로 만들어 보면서, <strong>내가 만든 기능을 스스로 설명하고 계속 개선할 수 있는 개발자</strong>로 성장하고 싶습니다. 🌷</p>
       <div className="about-skills">
         <h3>TOOLS I WORK WITH</h3>
         {[
@@ -691,6 +724,7 @@ function About() {
       </div></div></div>
   </main>;
 }
+
 
 function Footer() {
   return <footer className="footer"><div className="footer-landscape" aria-hidden="true"><svg viewBox="0 0 1440 180" preserveAspectRatio="none" focusable="false"><path d="M0 110 C190 22 300 146 490 133 C680 110 778 58 950 109 C1150 160 1240 26 1440 96 L1440 180 L0 180Z" fill="#bbdfe3" opacity=".74"/><path d="M0 133 C165 110 330 190 515 150 C690 116 798 167 960 136 C1130 100 1267 124 1440 107 L1440 180 L0 180Z" fill="#cfdbcd" opacity=".82"/></svg></div><div className="shell footer-inner"><span>jiwon.dev</span><span>Made with curiosity & care · 2026</span><a href={gmailComposeUrl} target="_blank" rel="noopener noreferrer">Contact ↗</a></div></footer>;
