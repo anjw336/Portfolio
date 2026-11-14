@@ -66,7 +66,7 @@ function Header({ route }: { route: string }) {
 
 function BrowserIllustration() {
   return (
-    <div className="cozy-visual" role="img" aria-label="노트북 앞에서 왼손으로 인사하고 오른손으로 분홍 꽃을 든 크림색 곰돌이 개발 일기. CSS로 그린 일러스트입니다.">
+    <div className="cozy-visual" role="img" aria-label="노트북 앞에 앉아 코드를 작성하는 크림색 곰돌이 개발 일러스트입니다.">
       <div className="cozy-aura" aria-hidden="true" />
       <div className="cozy-orbit" aria-hidden="true" />
       <div className="cozy-journal bear-diary-card" aria-hidden="true">
@@ -101,11 +101,11 @@ function BrowserIllustration() {
           </div>
           <div className="bear-laptop-base" />
         </div>
-        <div className="journal-bottom"><span>♡ made with care</span><span>2026 — ongoing</span></div>
+        
       </div>
       <div className="cozy-message" aria-hidden="true">
         <span className="message-doodle">✎</span>
-        <span>조금씩, 꾸준히<br/><b>만들어가는 중!</b></span>
+        <span>조금씩, 꾸준히<br/><b>만들어갑니다.</b></span>
         <span className="message-heart">♥</span>
       </div>
       <div className="cozy-swatch swatch-pink" aria-hidden="true" />
@@ -122,7 +122,7 @@ function Home() {
           <div className="eyebrow"><span aria-hidden="true">✽</span> HELLO, I'M JIWON</div>
           <h1 id="home-title">만들고, 부딪히고,<br /><em> 배워나가는</em> 개발자<span className="home-full-stop">.</span></h1>
           <p className="home-intro">안녕하세요, 안지원입니다.<br />아이디어를 직접 화면으로 만들고, 예상 밖의 문제를 해결하며<br className="desktop-only" /> <strong>새로운 것을 배우는 과정</strong>을 좋아합니다.</p>
-          <div className="home-tiny-note">little by little, with a lot of love <span aria-hidden="true">✿</span></div>
+          
         </div>
         <BrowserIllustration />
       </section>
@@ -169,7 +169,7 @@ function GameArt() {
 }
 
 function ActivityArt() {
-  return <div className="art art-ai" aria-hidden="true"><div className="agent-card agent-a"><small>agent A</small><strong>추천인가요?</strong></div><span className="agent-connector">⋯⋯↗</span><div className="agent-card agent-b"><small>agent B</small><strong>명령인가요?</strong></div><span className="agent-note">⚑ 해석 차이와 오류 전파</span></div>;
+  return <div className="art art-ai" aria-hidden="true"><div className="agent-card agent-a"><small>agent A</small><strong>추천입니까?</strong></div><span className="agent-connector">⋯⋯↗</span><div className="agent-card agent-b"><small>agent B</small><strong>명령입니까?</strong></div><span className="agent-note">⚑ 해석 차이와 오류 전파</span></div>;
 }
 
 function ContentCard({ to, number, type, title, description, tags, artwork, footer }: { to: string; number: string; type: string; title: ReactNode; description: string; tags: string[]; artwork: ReactNode; footer?: string }) {
@@ -314,13 +314,13 @@ export function issueTicketOnce(ticket: IssuedTicket): Promise<boolean> {
 const format = photoFormat(source);
 if (format === "unsupported") {
   throw new PhotoPreparationError(
-    "JPEG, PNG 또는 HEIC 사진만 선택할 수 있어요.",
+    "JPEG, PNG 또는 HEIC 형식의 사진만 선택할 수 있습니다.",
   );
 }
 if (format !== "heic") return source.uri;
 if (!source.uri.startsWith("file://")) {
   throw new PhotoPreparationError(
-    "사진 원본을 불러올 수 없어요. 시스템 갤러리에서 다시 선택해 주세요.",
+    "사진 원본을 불러올 수 없습니다. 시스템 갤러리에서 다시 선택해 주시기 바랍니다.",
   );
 }
 const context = ImageManipulator.manipulate(source.uri);
@@ -387,7 +387,7 @@ function MemoDetail() {
     <section className="memo-section memo-work-section" aria-labelledby="memo-wbs-title">
       <div className="memo-section-heading">
         <div><span className="memo-eyebrow">A LITTLE MORE · WORK LOG</span><h2 id="memo-wbs-title">조금 더 자세한 작업 기록</h2></div>
-        <p>핵심 경험을 읽은 뒤, 궁금할 때 펼쳐보세요.</p>
+        <p>핵심 경험을 확인한 뒤, 세부 내용을 펼쳐볼 수 있습니다.</p>
       </div>
       <details className="memo-work-details">
         <summary className="memo-work-toggle">
@@ -413,7 +413,7 @@ function MemoDetail() {
     </section>
 
     <section className="memo-section" aria-labelledby="memo-code-title">
-      <div className="memo-section-heading"><div><span className="memo-eyebrow">CODE & PROBLEM SOLVING</span><h2 id="memo-code-title">코드로 더 자세히 설명하는 네 가지 사례</h2></div><p>이 프로젝트에서 특히 고민했던 부분을 실제 코드와 함께 정리했어요.</p></div>
+      <div className="memo-section-heading"><div><span className="memo-eyebrow">CODE & PROBLEM SOLVING</span><h2 id="memo-code-title">코드로 더 자세히 설명하는 네 가지 사례</h2></div><p>이 프로젝트에서 특히 고민했던 부분을 실제 코드와 함께 정리했습니다.</p></div>
       <div className="memo-code-accordion">
         {memoCodeSamples.map((item) =>
           <article key={item.id} className="memo-experience">
@@ -688,18 +688,18 @@ function About() {
     </div><span className="about-hello">HELLO AGAIN, I'M JIWON</span><h2>안지원 <small>AN JI WON</small></h2><p>한국항공대학교 소프트웨어공학과<br/>2026.03 편입학 · 3학년 재학 중</p><div className="about-buttons"><a className="button primary-button" href={github} target="_blank" rel="noreferrer">GitHub <Arrow /></a><a className="button secondary-button" href={gmailComposeUrl} target="_blank" rel="noopener noreferrer">Email <Arrow /></a></div></section>
     <div className="about-content">
       <span className="section-label compact">A NOTE FROM JIWON</span>
-      <h2>만드는 재미를 좋아하고,<br/>고쳐가는 과정에서 더 많이 배워요.</h2>
-      <p className="about-story-lead">안녕하세요! 저는 떠오른 아이디어를 직접 화면으로 옮겨보는 일을 좋아합니다. 완벽한 결과를 한 번에 만들기보다는, 작은 기능부터 만들어 보고 예상과 다르게 동작하면 이유를 찾아가며 조금씩 완성해 나가고 있어요.</p>
+      <h2>만드는 재미를 좋아하고,<br/>고쳐가는 과정에서 더 많이 배웁니다.</h2>
+      <p className="about-story-lead">안녕하세요. 저는 떠오른 아이디어를 직접 화면으로 옮기는 일을 좋아합니다. 완벽한 결과를 한 번에 만들기보다 작은 기능부터 구현하고, 예상과 다르게 동작하면 원인을 찾아 해결하며 조금씩 완성해 나갑니다.</p>
       <div className="about-story-list">
         <article className="about-story-item">
           <span className="about-story-number">01 / THE FUN PART</span>
           <h3>내가 만든 것이 움직이는 순간</h3>
-          <p>MEMO:RE에서는 사진과 스티커로 한 장의 티켓을 꾸미고, Kotlin 게임에서는 방향키와 작은 이벤트로 플레이 흐름을 만들었습니다. 머릿속에 있던 아이디어가 화면에서 실제로 움직일 때 가장 큰 재미를 느껴요.</p>
+          <p>MEMO:RE에서는 사진과 스티커로 티켓을 꾸미고, Kotlin 게임에서는 방향키와 작은 이벤트로 플레이 흐름을 구현했습니다. 아이디어가 화면에서 실제로 작동할 때 가장 큰 재미를 느낍니다.</p>
         </article>
         <article className="about-story-item">
           <span className="about-story-number">02 / LITTLE DISCOVERIES</span>
           <h3>예상대로 되지 않아도, 그게 배움이 되니까</h3>
-          <p>이미지가 다른 기기에서 열리지 않거나 저장 과정에서 예외 상황이 생겼을 때, 당장 화면만 고치는 것보다 왜 그런 일이 일어났는지 이해하려고 했습니다. 그 과정에서 문제를 재현하고 확인하는 습관이 조금씩 생겼어요.</p>
+          <p>이미지가 다른 기기에서 열리지 않거나 저장 과정에서 예외가 발생하면, 화면만 수정하기보다 원인을 파악하려고 노력했습니다. 문제를 재현하고 확인하는 습관도 길렀습니다.</p>
         </article>
         <article className="about-story-item">
           <span className="about-story-number">03 / TOGETHER IS BETTER</span>
@@ -727,7 +727,7 @@ function About() {
 
 
 function Footer() {
-  return <footer className="footer"><div className="footer-landscape" aria-hidden="true"><svg viewBox="0 0 1440 180" preserveAspectRatio="none" focusable="false"><path d="M0 110 C190 22 300 146 490 133 C680 110 778 58 950 109 C1150 160 1240 26 1440 96 L1440 180 L0 180Z" fill="#bbdfe3" opacity=".74"/><path d="M0 133 C165 110 330 190 515 150 C690 116 798 167 960 136 C1130 100 1267 124 1440 107 L1440 180 L0 180Z" fill="#cfdbcd" opacity=".82"/></svg></div><div className="shell footer-inner"><span>jiwon.dev</span><span>Made with curiosity & care · 2026</span><a href={gmailComposeUrl} target="_blank" rel="noopener noreferrer">Contact ↗</a></div></footer>;
+  return <footer className="footer"><div className="footer-landscape" aria-hidden="true"><svg viewBox="0 0 1440 180" preserveAspectRatio="none" focusable="false"><path d="M0 110 C190 22 300 146 490 133 C680 110 778 58 950 109 C1150 160 1240 26 1440 96 L1440 180 L0 180Z" fill="#bbdfe3" opacity=".74"/><path d="M0 133 C165 110 330 190 515 150 C690 116 798 167 960 136 C1130 100 1267 124 1440 107 L1440 180 L0 180Z" fill="#cfdbcd" opacity=".82"/></svg></div><div className="shell footer-inner"><span>jiwon.dev</span><a href={gmailComposeUrl} target="_blank" rel="noopener noreferrer">Contact ↗</a></div></footer>;
 }
 
 function App() {
